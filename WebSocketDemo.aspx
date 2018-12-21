@@ -22,7 +22,7 @@
                 $('#msg').append('<p>正在连接</p>');
 
                 ws.onopen = function () {
-                    $('#msg').append('<p>已经连接</p>');
+                    $('#msg').append('<p>已经连接。</p>');
                 }
                 ws.onmessage = function (evt) {
                     $('#msg').append('<p>' + evt.data + '</p>');
